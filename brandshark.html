@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Bar Example</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+
+  /* Task bar*/
+
+  .task-bar {
+  background-color:#48AAAD; /* Change to your desired background color */
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 20px;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  font-size: 18px;
+  font-weight:100%;
+}
+
+.logo img {
+  height: 30px;
+  padding:5px;
+  padding-left:20px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  padding:8px;
+}
+
+.icon img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.info {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .task-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    margin-left: auto;
+  }
+}
+
+
+body{
+  width:100%;
+}
+/*header*/
+/* Reset default margin and padding for elements */
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+ font-size: 20px;
+  font-weight:100%;
+  padding-top:30px;
+}
+
+.logo1 .logo-image {
+  height: 40px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav .nav-item {
+  margin-left: 20px;
+}
+
+.nav .nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+.login{
+  padding:2px;
+}
+.login .profile-image {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.login .login-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.login .submit-button {
+  background-color: #0D98BA;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  padding-right:40px;
+}
+
+/* Hover effect on buttons */
+.nav .nav-link:hover,
+.login .login-link:hover
+ {
+  background-color: #0D98BA;
+}
+.login .submit-button:hover{
+  background-color: darkblue;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+  .logo .logo-image {
+    height: 40px;
+  }
+
+  .nav .nav-item {
+    margin-left: 10px;
+  }
+
+  .login .profile-image {
+      height:20px;
+      }
+  
+  .login .submit-button {
+    padding: 8px 16px;
+  }
+}
+
+.container-fluid{
+   font-family: 'Montserrat', sans-serif;
+   font-size:24px;
+   font-weight: 100%;
+   padding-top:30px;
+
+}
+  .property-heading {
+      font-weight: bold;
+      padding:20px;
+    }
+
+    .property-description {
+      font-weight: lighter;
+      padding:20px;
+    }
+
+    .property-button {
+      margin-top: 10px;
+      padding:10px;
+      margin-left:2%;
+      background-color:#0D98BA ;
+    }
+    .property-button:hover{
+      background-color:darkblue ;
+
+    }
+
+    .property-link {
+      margin-top: 10px;
+      display: block;
+      padding:10px;
+    }
+
+    .property-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+  /*footer*/ 
+
+    .footer {
+      background-color: #e0f7fa;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height:150px;
+    }
+
+
+    .footer img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+     margin-left: 88px;
+      padding:10px;
+    }
+
+    .footer span {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+     margin-left: 88px;
+      padding:10px;
+      font-size:14px;
+      font-weight: bold;
+    }
+
+    /*columns */
+
+.columns4{
+  padding: 20px;
+  display: flex;
+  height:150px;
+  padding-top:6%;
+}
+
+    .logo3 img {
+  height: 50px;
+}
+.logo4{
+  height:50px;
+  float:right;
+}
+
+.header-title h1{
+  font-weight: bold;
+  font-size: 50px;
+  display: flex;
+  align-items:center;
+  margin-left: 550px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.column5 {
+  flex-basis: calc(25% - 40px);
+  margin: 20px;
+  text-align: center;
+  padding-top:5%;
+}
+
+.column5 img {
+  width: 50px;
+  max-width: 200px;
+  margin: 0 auto;
+  height:50px;
+}
+
+.column5 h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.column5 p {
+  margin-top: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more img {
+  width: 12px;
+  margin-left: 5px;
+}
+
+.read-more:hover {
+  color: black;
+}
+.column5:hover{
+  background-color:#e0f7fa ;
+  height:270px;
+  border-radius: 10%;
+}
+.content .submit-button3{
+ background-color: #0D98BA;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  padding-right:30px;
+  align-items: center;
+  margin-left:650px;
+}
+.content .submit-button:hover{
+  background-color: darkblue;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .column5 {
+    flex-basis: calc(50% - 40px);
+  }
+  .login .submit-button {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .column5 {
+    flex-basis: calc(100% - 40px);
+  }
+  .login .submit-button {
+    padding: 10px 20px;
+  }
+}
+
+.footer1 {
+  background-color: #48AAAD;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+.footer1 img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 88px;
+  padding: 10px;
+  background-color: #69cab9; /* doubt */
+}
+
+.footer1 .num span {
+  width: 70px;
+  height: 70px;
+  margin-left: 100px;
+  padding: 10px;
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer1 .prop span {
+  margin-left: 88px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.mix {
+  padding-top: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .footer1 img {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer1 .num span {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer1 .prop span {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
+
+.container5 {
+      box-sizing: border-box;
+    }
+
+    .container5 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top:5%;
+    }
+    .container6 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+ 
+
+    .column0 {
+      flex-basis: 33.33%;
+      padding: 7%;
+      text-align: center;
+      background-color: lightcyan;
+      height:40%;
+
+    }
+     .column1 {
+      flex-basis: 33.33%;
+      padding: 30px;
+       padding: 7%;
+      text-align: center;
+      height:40%;
+    }
+
+    .column0 img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .column1 img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .step {
+      font-weight: bold;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+    .center-text {
+       text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .center-text img {
+      margin-left:50%;
+
+    }
+    
+
+    @media screen and (max-width: 768px) {
+      .column0 {
+        flex-basis: 100%;
+
+      }
+      .column1{
+        flex-basis:100%;
+      }
+
+    }
+
+.container7{
+      box-sizing: border-box;
+    }
+
+    .container7 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top:5%;
+    }
+  
+    .container7 .column0 {
+      flex-basis: 33.33%;
+      padding: 7%;
+      text-align: center;
+      height:10%;
+      padding-top:1%;
+  background-color: white;
+    }
+    .container7 .column0 img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+   .container7 .column0 img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .step {
+      font-weight: bold;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+    .center-text1 {
+       text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .column5{
+        flex-basis:100%;
+      }
+
+    }
+
+/*founder*/
+
+.container11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #48AAAD;
+  color:white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.column-icons {
+  flex-basis: 100%;
+}
+
+.column-picture {
+  flex-basis: 50%;
+}
+
+@media (min-width: 768px) {
+  .column-icons {
+    flex-basis: 30%;
+  }
+
+  .column-picture {
+    flex-basis: 40%;
+
+  }
+
+  .column-description {
+    flex-basis: 30%;
+  }
+}
+
+
+
+    .name7 {
+      font-weight: bold;
+      font-size:29px;
+      text-align: center;
+      margin-bottom: 10px;
+      padding-right:17%;
+    }
+
+    .designation7 {
+      font-weight: 600;
+       font-size:23px;
+      text-align: center;
+      margin-bottom: 10px;
+      padding-right:17%;
+    }
+
+    .company7 {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-right:17%;
+    }
+
+    .description7 {
+      text-align: justify;
+      font-size:20px;
+      padding-right:17%;
+    }
+    .line {
+      width: 80%;
+      margin-left:1%;
+      border-top: 2px solid #000;
+    }
+
+    .center-text2{
+      text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    }
+    .center-text2 h1{
+      font-weight: bold;
+      font-size:43px;
+    }
+    .container12{
+     display: flex;
+            justify-content: space-between;
+    
+          /* Border around the container */
+            background-color: #48AAAD;
+  color:white;
+  height:40%;
+  padding:50px;
+    }
+      .column {
+            flex: 1;
+            padding: 20px;
+            padding-top:2%;
+            border-radius: 3%;
+
+        }
+
+    .column01 {
+            background-image: url('assets/advisor-1.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-left: 5%;
+            color:rgba(0, 0, 0, 0.5);
+        }
+
+        /* Overlaying text in first column */
+        .column01 .overlay-text {
+        margin-left:1%;
+            bottom: 20px;
+            left: 20px;
+            color: darkcyan;
+            font-size:27px;
+
+            font-weight: bold;
+            padding-left:6%;
+
+        }
+
+        /* Image in second column */
+        .column02 img {
+            max-width: 100%;
+            
+            
+                }
+
+        /* Transparent black color in third column */
+        .column03 {
+            background-color:rgb(0,0,0,255);
+            margin-right:5%;
+            height:auto;
+
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                margin: 20px 0;
+            }
+        }
+
+
+
+        .container14{
+          background-color: lightcyan;
+          padding-top:20px;
+          padding-bottom:20px;
+
+          
+        }
+        .stars-container {
+            text-align: center;
+        }
+
+        /* Stars images */
+        .stars-container img {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+        }
+
+        /* Center align text */
+        .center-text3 {
+            text-align: center;
+            margin: 20px 0;
+            margin-left:10%;
+          margin-right:10%;
+        }
+
+        /* Container for product images */
+        .product-container {
+            text-align: center;
+        }
+
+        /* Product images */
+       .product-container img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+             /* Border style */
+            transition: transform 0.3s ease-in-out; /* Transition effect for smooth scaling */
+        }
+
+        /* Hover effect for product images */
+        .product-container img:hover {
+            transform: scale(1.3); /* Increase the size of the image on hover */
+            border-radius:50% /* Maintain the same border on hover */
+        }
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .stars-container img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .product-container img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+  .container15{
+          padding-top:20px;
+          display:flex;
+          align-items:center;
+        }
+      .center-text6{
+      text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    padding-left:45%;
+    }
+    .center-text6 h1{
+      font-weight: bold;
+      font-size:43px;
+    }
+    .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  height: 10%;
+  margin-top:5%;
+  padding-left: 3%;
+
+}
+
+
+ .container16 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 6%;
+
+      }
+.column16 {
+        flex: 33.33px;
+        padding: 5px;
+        padding-left:4%;
+
+
+      }
+      .blog-post {
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .blog-image {
+        width: 100%;
+        height: auto;
+        border-radius: 3%;
+
+      }
+      .blog-matter {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      .blog-image1{
+        width:100%;
+        height:auto;
+        border-radius:7%;
+      }
+      .h2{
+        font-size:25px;
+        font-weight:bold;
+      }
+      .p1{
+        font-size:18px;
+
+    
+      }
+      .but{
+        border-radius:2px;
+        border:none;
+        background-color: lightsilver;
+        font-family: calibri;
+        font-size:26px;
+        font-weight: 5%;
+         padding: 12px 30px;
+      }
+      .buttonmain{
+        background-color: #48AAAD;
+        border:none;
+        border-radius:2%;
+        color:white;
+        font-size:26px;
+        margin-left:45%;
+        padding: 16px 60px;
+      }
+      .h3{
+          color:deeppink;
+          font-family: calibri;
+          font-size:70px;
+          margin-left:45%;
+      }
+      .buttonmain:hover{
+        color:white;
+        background-color: darkblue;
+        padding:16px 60px;
+      }
+      .mid{
+          margin-left:45%;
+      }
+      .center-text8{
+      text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+      }
+      @media only screen and (max-width: 768px) {
+    .column16 {
+        flex: 100%;
+        padding-left: 0;
+    }
+
+    .buttonmain {
+        margin-left: 0;
+    }
+
+    .h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .mid {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+
+.container17 {
+  display: flex;
+  justify-content: center;
+  padding-top:6%;
+}
+
+.button17 {
+  padding: 10px 25px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50px;
+  background-color: silverwhite;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button17:hover {
+  background-color: #00b2cc;
+  color: white;
+}
+
+
+.container18 {
+  position: relative;
+  max-width: 100%;
+  padding-top: 6%;
+}
+
+.map-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.map-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #48AAAD;
+  color: white;
+  font-size: 18px;
+  padding: 16px 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.info-box {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:white ;
+  color:#48AAAD;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bold;  border-radius: 3px;
+
+  text-align: center;
+  margin-top:3%
+}
+
+.info-text {
+  margin: 0;
+}
+
+.map-button:hover + #info-box {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .map-button {
+    top: 90%;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
+
+.center-text90{
+
+     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:6%;
+      }
+    .center-text90 h1{
+      font-weight: bold;
+      font-size:35px;
+    }
+  
+
+  .container20 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6%;
+
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.column20 {
+  order: 1;
+}
+
+.column21 {
+  order: 2;
+}
+
+.container20 h2 {
+  font-size: 24px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #48AAAD;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image1,
+
+ {
+  width: 30%;
+  height: 30%;
+ margin-bottom:10%;
+margin-right:2px;
+
+}
+
+.image-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.image3,
+.image4,
+.image5 {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  padding:20px;
+  margin-left:30%;
+}
+
+.image-text p {
+  margin: 0;
+}
+.container20 button:hover{
+  background-color: darkblue;
+}
+
+@media (max-width: 768px) {
+  .column20,
+  .column21 {
+    order: unset;
+    width: 100%;
+  }
+  
+  .column21 {
+    padding-top: 20px;
+  }
+  
+  .image1,
+  .image2 {
+    max-width: 100%;
+  }
+  
+  .image-text {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .image3,
+  .image4,
+  .image5 {
+    width: 30
+
+}
+</style>
+<style>
+.footer-clean {
+  padding:40px 0;
+ background-color:black;
+ color:white;
+}
+.footer-clean.container{
+  background-color: 
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+</style>
+
+<body>
+  <div class="task-bar">
+    <div class="logo">
+      <img src="assets\linkedin-icon.png" alt="Logo 1">
+      <img src="assets\fb-icon.png" alt="Logo 2">
+    </div>
+    <div class="contact-info">
+      <span class="icon">
+        <img src="assets\footer-mail-icon.png" alt="Mail Icon">
+      </span>
+      <span class="info">sales@housewise.in</span>
+      <span class="icon">
+        <img src="assets\footer-phone-icon.png" alt="Mobile Icon">
+      </span>
+      <span class="info">+91-8448440693</span>
+    </div>
+  </div>
+
+
+  <header class="header">
+    <div class="logo1">
+      <img src="assets\logo.png" alt="Logo" class="logo-image">
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <img src="assets\nav-login-icon.png" alt="Profile Image" class="profile-image">
+      <a href="#login" class="login-link" id="loginLink">Login/Register</a>
+      <button class="submit-button">Submit Property</button>
+    </div>
+  </header>
+
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="property-heading">Property Management For NRI's in India</h1>
+        <p class="property-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <button class="btn btn-primary property-button">Explore Services</button>
+        <a href="#" class="property-link">Click here if you are a tenant</a>
+      </div>
+      <div class="col-md-6">
+        <img src="assets\banner-img.png" alt="Property Image" class="property-image">
+      </div>
+    </div>
+  </div>
+
+<br></br><br>
+    <div class="container-fluid footer">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <img src="assets\pune.png" alt="Image 1">
+      
+        <img src="assets\bangalore.png" alt="Image 2">
+         
+        <img src="assets\hyderabad.png" alt="Image 3">
+        <img src="assets\gurugram.png" alt="Image 4">
+        <img src="assets\noida.png" alt="Image 5">
+        <img src="assets\chennai.png" alt="Image 6">
+        <img src="assets\delhi.png" alt="Image 7">
+        <img src="assets\mumbai.png" alt="Image 8">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+          <span>Pune</span>
+        <span>Bangalore</span>
+       <span>Hyderabad</span>
+        <span>Gurugram</span>
+        <span>Noida</span>
+        <span>Chennai</span>
+        <span>Delhi</span>
+       <span> Mumbai</span>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="columns4">
+    <div class="logo3">
+      <img src="assets\element-7.png" alt="Logo">
+    </div>
+    <div class="header-title">
+      <h1>What We Do</h1>
+    </div>
+  </header>
+  <section class="content">
+    <div class="column5">
+      <img src="assets\icon-1.png" alt="Image 1">
+      <h2>End to End Services</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="#" class="read-more">Read More -></a>
+    </div>
+    <div class="column5">
+      <img src="assets\icon-2.png" alt="Image 2">
+      <h2>Rental Management</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="#" class="read-more">Read More -></a>
+    </div>
+    <div class="column5">
+      <img src="assets\icon-3.png" alt="Image 3">
+      <h2>Property Management</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="#" class="read-more">Read More -></a>
+    </div>
+    <div class="column5">
+      <img src="assets\icon-4.png" alt="Image 4">
+      <h2>Online Rent Agreement</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <a href="#" class="read-more">Read More -></a>
+    </div>
+    <button class="submit-button3">Explore More</button>
+     
+  </section>
+  <div class="logo4">
+      <img src="assets\element-3.png" alt="Logo">
+    </div>
+</div>
+<br></br>
+
+<!-- About us-->
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets\about-us-img.png" alt="Property Image" class="property-image">
+      </div>
+      <div class="col-md-6">
+        <h1 class="property-heading">About Us</h1>
+        <p class="property-description">Lorem Ipsum is simply dummy text of the printing
+and typesetting industry. Lorem Ipsum has been the
+industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and
+scrambled it to make a type specimen book.
+.</p>
+        <button class="btn btn-primary property-button">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+<br></br>
+
+<div class="container-fluid footer1">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <img src="assets\icon-properties.png" alt="Image 1">
+        <img src="assets\icon-sqft.png" alt="Image 2">
+        <img src="assets\icon-clients.png" alt="Image 3">
+        <img src="assets\icon-cities.png" alt="Image 4">
+        <img src="assets\icon-countries.png" alt="Image 5">
+      </div>
+    </div>
+<div class="mix">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="num">
+          <span>770</span>
+        <span>9493899</span>
+       <span>39</span>
+        <span>7</span>
+        <span>29</span>
+      </div>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="prop">
+          <span>Properties</span>
+        <span>SquareFeet</span>
+       <span>Happy Clients</span>
+        <span>Cities</span>
+        <span>Countries</span>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br></br>
+
+
+
+<div class="container5">
+    <div class="center-text">
+      <h1>How It Works</h1>
+       <img class="element-5" src="assets\element-5.png" alt="Image 1" style="position: absolute;right=50px;">
+      <img src="assets\element-6.png" alt="Image 2" style="position: absolute; right: 2px;">
+    </div>
+  </div>
+  <div class="container5">
+    <div class="column0">
+      <img src="assets\icon-step-1.png" alt="Image 3">
+      <div class="step">Step 01</div>
+      <div class="description">House owner contacts HouseWise representative and authorizes him/her to rent out the property (flat/bungalow) on the house owner's behalf</div>
+    </div>
+    <div class="column1">
+      <img src="assets\icon-step-2.png" alt="Image 4">
+      <div class="step">Step 02</div>
+      <div class="description">HouseWise team inspects the property and creates a listing with attractive photos and details</div>
+    </div>
+    <div class="column0">
+      <img src="assets\icon-step-3.png" alt="Image 5">
+      <div class="step">Step 03</div>
+      <div class="description">HouseWise markets the property, screens potential tenants, and manages the entire rental process</div>
+    </div>
+  </div>
+</div>
+<div class="container6">
+    <div class="column1">
+      <img src="assets\icon-step-4.png" alt="Image 3">
+      <div class="step">Step 04</div>
+      <div class="description">On finalizing the tenant, HouseWise does the
+following;
+a) Police verification of the prospective tenant
+b) Ask for proof of employment (HR letter) from
+the prospective tenant</div>
+    </div>
+    <div class="column0">
+      <img src="assets\icon-step-5.png" alt="Image 4">
+      <div class="step">Step 05</div>
+      <div class="description">After successful verification of the
+prospective tenant, HouseWise prepare the
+contract to be signed by both parties - house
+owner and the tenant. House owner can preauthorize HouseWise representative to sign
+on the owner's behalf</div>
+    </div>
+    <div class="column1">
+      <img src="assets\icon-step-6.png" alt="Image 5">
+      <div class="step">Step 06</div>
+      <div class="description">a) Tenant transfers monthly rent to house
+owner's account.
+b) HouseWise continues to maintain
+property till end of the lease.</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container7">
+    <div class="center-text1">
+      <h1>Benefits</h1>
+       <img class="element-5" src="assets\element-4.png" alt="Image 1" style="position: absolute;left:10px;">
+    </div>
+  </div>
+
+<div class="container7">
+    <div class="column0">
+      <img src="assets\icon-step-4.png" alt="Image 3">
+      <div class="step">Lower Risk profile</div>
+      <div class="description">House owner contacts HouseWise
+representative and authorizes him/her to
+rent out the property(flat/bunglow) on the
+house owner's behalf</div>
+    </div>
+    <div class="column0">
+      <img src="assets\icon-step-5.png" alt="Image 4">
+      <div class="step">Superior Financing</div>
+      <div class="description">House owner hands over keys and relevant
+property documents to the HouseWise
+representative</div>
+    </div>
+    <div class="column0">
+      <img src="assets\icon-step-6.png" alt="Image 5">
+      <div class="step">Tax benefits</div>
+      <div class="description">HouseWise hunts for tenants, the ones
+working with marquee companies and
+looking out for a house on rent.
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="container11">
+    <div class="row">
+
+      <div class="column column-icons">
+        <div class="logo-row7">
+          <img src="assets/linkedin-icon.png" alt="LinkedIn Logo">
+        </div>
+        <br>
+        <div class="logo-row7">
+          <img src="assets/insta-icon.png" alt="Instagram Logo">
+        </div>
+        <br>
+        <div class="logo-row7">
+          <img src="assets/fb-icon.png" alt="Facebook Logo">
+        </div>
+        <br>
+        <div class="logo-row7">
+          <img src="assets/twitter-icon.png" alt="Twitter Logo">
+        </div>
+        <br>
+      </div>
+
+      <div class="column column-picture">
+        <img src="assets\founder-image.png" alt="Picture">
+      </div>
+
+
+      <div class="column column-description">
+         <div class="name7">Pryank Agrawal</div>
+      <div class="designation7">Founder &amp; CEO</div>
+      <div class="company7">IIT Roorkee</div>
+      <div class="description7">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+          type specimen book.</p>
+      </div>
+      </div>
+
+    <div class="line"></div>
+    </div>
+
+  </div>
+
+    <div class="container11">
+      
+    <div class="center-text2">
+      <h1>Advisory Board</h1>
+       <img class="element-0" src="assets\element-2.png" alt="Image 1" style="position: absolute;left:1px;">
+    </div>
+    </div>
+
+    <div class="container12">
+        <div class="column column01">
+            <div class="overlay-text">
+                <div style="font-weight: bold;">Ruchi Arora</div>
+                <div style="font-weight: lighter;">ISB Hyderabad</div>
+                <div style="font-weight: lighter;">
+                    Lorem Ipsum is simply dummy text
+                    of the printing and typesetting
+                    industry. Lorem Ipsum has been
+                    the industry's standard dummy
+                    text ever since the 1500s, when an
+                    unknown printer took a galley of
+                    type and scrambled it to make a
+                    type specimen book.
+                </div>
+            </div>
+        </div>
+        <div class="column column02">
+            <img src="assets\advisor-2.jpg" alt="Image"> <!-- Replace with your image URL -->
+        </div>
+        <div class="column column03">
+            <!-- Empty column with transparent black color -->
+        </div>
+    </div>
+
+    <div class="container14">
+     <div class="stars-container">
+        <img src="assets\star-icon.png" alt="Star"> <!-- Replace with your star image URL -->
+        <img src="assets\star-icon.png" alt="Star">
+        <img src="assets\star-icon.png" alt="Star">
+        <img src="assets\star-icon.png" alt="Star">
+        <img src="assets\star-icon.png" alt="Star">
+    </div>
+    <div class="center-text3">
+        <p style="margin: 0 20px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+        </p>
+        <p style="font-weight: bold; font-size:30px;">James Knusden</p>
+        <p>Product Manager</p>
+    </div>
+    <div class="product-container">
+        <img src="assets\testimonial-1.png" alt="Product 1"><!-- Replace with your product image URL -->
+        <img src="assets\testimonial-2.png" alt="Product 2">
+        <img src="assets\testimonial-3.png" alt="Product 3">
+    </div>
+  </div>
+
+  <div class="container15">
+      <div class="center-text6">
+      <h1>In the News</h1>
+       <img class="element-0" src="assets\element-1.png" alt="Image 1" style="position: absolute;left:1px;">
+    </div>
+    </div>
+     <div class="image-container">
+  <img src="assets\client-1.png" alt="Image 1">
+  <img src="assets\client-2.png" alt="Image 2">
+  <img src="assets\client-3.png" alt="Image 3">
+  <img src="assets\client-4.png" alt="Image 4">
+  <img src="assets\client-5.png" alt="Image 5">
+</div>
+  </div>
+
+      <div class="container16">
+      <div class="column16">
+        <div class="blog-post">
+          <img class="blog-image" src="assets\post-1.png" alt="Blog Image 1">
+          <div class="blog-matter">
+            <h2 class="h2">Ways to Reduce Interest Rates</h2>
+              <p class="p1">How can you be bored when you have so many
+things to do & a lot to catch up with which you
+would otherwise miss because of your hectic
+routine?..<a href="#">READ MORE</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="column16">
+        <div class="blog-post">
+          <img class="blog-image" src="assets\post-2.png" alt="Blog Image 2">
+          <div class="blog-matter">
+            <h2 class="h2">Ways to Reduce Interest Rates</h2>
+            <p class="p1">How can you be bored when you have so many
+things to do & a lot to catch up with which you
+would otherwise miss because of your hectic
+routine?..<a href="#">READ MORE</a></p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="column16">
+        <div class="blog-post">
+          <img class="blog-image1" src="assets\post-3.png" alt="Blog Image 3">
+          <div class="blog-matter">
+            <h2 class="h2">Ways to Reduce Interest Rates</h2>
+             <p class="p1">How can you be bored when you have so many
+things to do & a lot to catch up with which you
+would otherwise miss because of your hectic
+routine?..<a href="#">READ MORE</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="center-text8">
+    <button class="buttonmain"> View All</button>
+    <img src="assets\element-6.png" alt="Image 2" style="position: absolute; right: 2px;">
+  </div>
+
+  <div class="container17">
+  <button class="button17">Button 1</button>
+  <button class="button17">Button 2</button>
+  <button class="button17">Button 3</button>
+  <button class="button17">Button 4</button>
+  <button class="button17">Button 5</button>
+  <button class="button17">Button 6</button>
+  <button class="button17">Button 7</button>
+  <button class="button17">Button 8</button>
+</div>
+  </div>
+
+  <div class="container18">
+  <img src="assets\map-img.png" alt="Map Picture" class="map-image">
+  <button class="map-button" id="info-button">click</button>
+  <div class="info-box" id="info-box">
+    <p class="info-text">
+      Mumbai<br>
+      Vishala Complex, 1st Floor,<br>
+      Sector 7, HSR Layout,<br>
+      Bangalore, 560102.<br>
+      0123456789<br>
+      Email: example@example.com
+    </p>
+  </div>
+</div>
+<div class="container19">
+    <div class="center-text90">
+      <h1>Contact</h1>
+       <img class="element-4" src="assets\element-4.png" alt="Image 1" style="position: absolute;left:2px;">
+      <img src="assets\element-9.png" alt="Image 2" style="position: absolute; right: 2px;">
+    </div>
+  </div>
+
+<div class="container20">
+  <div class="column column20">
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="column column21">
+    <img src="assets\contact-img-2.png" alt="Image 1" class="image1">
+   <img src="assets\contact-img.png" alt="Image 2" class="image2">
+    <div class="image-text">
+      <img src="assets\contact-phone-icon.png" alt="Image 3" class="image3">
+      <p>+91 98867 69886<br>
++91 81478 24460</p>
+    </div>
+    <div class="image-text">
+      <img src="assets\contact-email-icon.png" alt="Image 4" class="image4">
+      <p><a href="https://gmail.com">sales@gmail.com</a></p>
+    </div>
+    <div class="image-text">
+      <img src="assets\contact-location-icon.png" alt="Image 5" class="image5">
+      <p>#51/2, 13th Cross, JP Nagar,
+1st Phase, Anjaneya
+Temple Street, Sarakki Gate,</p>
+    </div>
+  </div>
+</div>
+
+
+
+ <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-3 item social">
+                          <a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><br></br>
+                                        <p>Office Address
+sales@housewise.in
++91-8448440693
+#51/2, 13th Cross, JP Nagar,
+1st Phase, Anjaneya
+Temple Street, Sarakki Gate,</p>
+                    </div>
+                    <br>
+                    <div class="col-sm-4 col-md-3 item">
+
+                        </div>
+                    <div class="col-sm-4 col-md-3 item">
+  
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">End to End Services </a></li>
+                            <li><a href="#">Rental Management</a></li>
+                             <li><a href="#">Property Management</a></li>
+                            <li><a href="#">Online Rent Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Pay Rent</a></li>
+                             <li><a href="#">Submit Property</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                     <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                             <li><a href="#">Privacy Policy</a></li>
+                        
+                          
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </footer>
+    </div>
+
+ 
+
+
+
+</body>
+<script>
+  // Example JavaScript code for handling click event on the "Explore Services" button
+  document.querySelector('.property-button').addEventListener('click', function() {
+    alert('Button clicked!'); // Replace with your own functionality
+  });
+
+  // Example JavaScript code for handling click event on the "Click here if you are a tenant" link
+  document.querySelector('.property-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    alert('Link clicked!'); // Replace with your own functionality
+  });
+</script>
+<script>
+  // Get the login link element by its ID
+  var loginLink = document.getElementById('loginLink');
+  
+  // Add click event listener to the login link
+  loginLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    
+    // Check if the login link text is "Login/Register"
+    if (loginLink.innerText === 'Login/Register') {
+      alert('Login button clicked!'); // Replace with your own login functionality
+      loginLink.innerText = 'Logout'; // Change the login link text to "Logout"
+    } else {
+      alert('Logout button clicked!'); // Replace with your own logout functionality
+      loginLink.innerText = 'Login/Register'; // Change the login link text back to "Login/Register"
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
